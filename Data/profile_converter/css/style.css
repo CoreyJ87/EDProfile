@@ -1,0 +1,12 @@
+body {
+	margin: 0 auto;	
+}
+.hideTab {
+	display:none;
+}
+.ui-tabs {
+padding: 0 !important;
+}
+.ui-tabs-panel {
+padding: 0em !important;
+}
