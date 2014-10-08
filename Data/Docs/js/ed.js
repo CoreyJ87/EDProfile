@@ -1,6 +1,8 @@
 var commandRunning = false;
 var Daelement;
+
 $(document).ready(function () {
+
     $(".toggle").click(function () {
         $(this).toggleClass("active");
     });
@@ -19,7 +21,7 @@ $(document).ready(function () {
             if(!commandRunning) {
                 commandRunning = true;
                 Daelement = $(this);
-                $(this).addClass('active').delay(1000).queue(function () {
+                $(this).addClass('active').delay(500).queue(function () {
                     var keys = $(this).attr('key');
                     multiFunction(keys, Daelement);
                     $(this).dequeue();

@@ -1,49 +1,76 @@
-<!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <meta name="mobile-web-app-capable" content="yes">
     <title>rFactor-Desrat</title>
 
     <!-- Links to CSS & jQuery -->
-    <link rel="stylesheet" href="css/foundation.css"/>
     <link rel="stylesheet" href="css/app.css"/>
-    <script src="js/vendor/modernizr.js"></script>
-    <link type="text/css" href="css/dark-hive/jquery-ui.min.css" rel="stylesheet"/>
-    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/ed.js"></script>
+
+    <!--  <link rel="stylesheet" href="css/foundation.css"/>-->
+    <!--  <script src="js/vendor/modernizr.js"></script>-->
+
+    <link rel="stylesheet" href="css2/foundation.css" />
+
+      <link type="text/css" href="css/dark-hive/jquery-ui.min.css" rel="stylesheet"/>
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/ed.js"></script>
+        <script src="js2/vendor/modernizr.js"></script>
+        <script src="js2/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 </head>
-
-<!-- Start the document -->
 <body>
-
-<!-- Tabs Content-->
 <div id="container">
     <div class="row">
         <div class="small-12 columns shipsection">
             <h3 class="orange"> Utilities </h3>
+            <ul class="small-block-grid-1">
+                <li>
+                    <a class="large button radius expand multiFunction" href="javascript:void(0);" key="s;s;{SPACE}">Launch</a>
+                </li>
+            </ul>
+            <ul class="small-block-grid-1">
+                <li>
+                    <a class="large button radius expand" href="javascript:void(0);" key="{TAB}">Boost</a>
+                </li>
+            </ul>
             <ul class="small-block-grid-4">
                 <li>
-                    <a class="button radius expand toggle" key="{insert}"
+                    <a class="button radius expand" key="{insert}"
                        href="javascript:void(0);"
                             >Landing Gear</a>
                 </li>
                 <li>
-                    <a class="button radius expand toggle" href="javascript:void(0);" key="u"
+                    <a class="button radius expand" href="javascript:void(0);" key="{ENTER}"
                             >Hardpoints</a>
                 </li>
                 <li>
-                    <a class="button radius expand toggle" href="javascript:void(0);" key="{home}"
+                    <a class="button radius expand" href="javascript:void(0);" key="{home}"
                             >Cargo Scoop</a>
                 </li>
                 <li>
-                    <a class="button radius expand toggle" href="javascript:void(0);" key="L"
+                    <a class="button radius expand" href="javascript:void(0);" key="l"
                             >Lights</a>
                 </li>
+                </ul>
+            <ul class="small-block-grid-3">
                 <li>
                     <a class="button multiFunction radius expand" href="javascript:void(0);" key="1;e;e;{SPACE};s;{SPACE};1"
                             >Request Auth</a>
+                </li>
+                <li>
+                    <a class="button multiFunction radius expand" href="javascript:void(0);" key="1;{SPACE};s;{SPACE};1"
+                            >Retry Auth</a>
+                </li>
+                <li>
+                    <a class="button radius expand" key="{DELETE}"
+                       href="javascript:void(0);"
+                            >Silent Running</a>
                 </li>
             </ul>
         </div>
@@ -51,28 +78,89 @@
     <div class="row">
         <div class="small-12 columns shipsection">
             <h3 class="orange">Targeting</h3>
-            <ul class="small-block-grid-2">
+            <ul class="small-block-grid-1">
                 <li>
-                    <a class="button radius expand" href="javascript:void(0);" key="M"
-                            >Previous Fire Group</a>
-                </li>
-                <li>
-                    <a class="button radius expand" href="javascript:void(0);" key="N"
-                            >Next Fire Group >></a>
+                    <a class="large button radius expand" href="javascript:void(0);" key="h">Threat</a>
                 </li>
             </ul>
             <ul class="small-block-grid-3">
+                <li>
+                    <a class="small button radius expand" href="javascript:void(0);" key="{NUMPADDIV}"
+                            > Target Next Hostile</a>
+                </li>
+
+                <li>
+                    <a class="small button radius expand" href="javascript:void(0);" key="t"
+                            >Lock</a>
+                </li>
+                <li>
+                    <a class="small button radius expand" href="javascript:void(0);" key="g"
+                            >Target Next Friendly</a>
+                </li>
+            </ul>
+            <ul class="small-block-grid-2">
                 <li>
                     <a class="small button radius expand" href="javascript:void(0);" key="]"
                             > Previous Subsystem</a>
                 </li>
                 <li>
-                    <a class="button radius expand" href="javascript:void(0);" key="T"
-                            >Target Subsystem</a>
+                    <a class="small button radius expand" href="javascript:void(0);" key="y"
+                            >Next Subsystem</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns shipsection">
+            <h3 class="orange">Battle</h3>
+            <ul class="small-block-grid-2">
+                <li>
+                    <a class="button radius expand" href="javascript:void(0);" key="m"
+                            >Previous Fire Group</a>
                 </li>
                 <li>
-                    <a class="small button radius expand" href="javascript:void(0);" key="Y"
-                            >Next Subsystem</a>
+                    <a class="button radius expand" href="javascript:void(0);" key="n"
+                            >Next Fire Group >></a>
+                </li>
+            </ul>
+            <ul class="small-block-grid-3">
+                <li>
+                    <a class="button radius expand multiFunction" href="javascript:void(0);" key="{LEFT};{LEFT};{LEFT};{LEFT}"
+                            >Full Power to Systems >></a>
+                </li>
+                <li>
+                    <a class="button radius expand multiFunction" href="javascript:void(0);" key="{UP};{UP};{UP};{UP}"
+                            >Full Power to Engines >></a>
+                </li>
+                <li>
+                    <a class="button radius expand multiFunction" href="javascript:void(0);" key="{RIGHT};{RIGHT};{RIGHT};{RIGHT}"
+                            >Full Power to Weapons >></a>
+                </li>
+            </ul>
+            <ul class="small-block-grid-3">
+                <li>
+                    <a class="button radius expand" href="javascript:void(0);" key="{UP}"
+                            >Power to Engines</a>
+                </li>
+                <li>
+                    <a class="button radius expand" href="javascript:void(0);" key="{LEFT}"
+                            >Power to Systems</a>
+                </li>
+                <li>
+                    <a class="button radius expand" href="javascript:void(0);" key="{RIGHT}"
+                            >Power to Weapons</a>
+                </li>
+            </ul>
+            <ul class="small-block-grid-2">
+                <li>
+                    <a class="button radius expand toggle" key="v"
+                       href="javascript:void(0);"
+                            >Deploy Heat Sink</a>
+                </li>
+                <li>
+                    <a class="button radius expand toggle" key="{NUMPADMULT}"
+                       href="javascript:void(0);"
+                            >Deploy Shield Cell</a>
                 </li>
             </ul>
         </div>
