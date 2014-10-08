@@ -1,6 +1,6 @@
 var commandRunning = false;
 var Daelement;
-
+$(document).foundation();
 $(document).ready(function () {
 
     $(".toggle").click(function () {
