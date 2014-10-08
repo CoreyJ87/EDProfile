@@ -1,8 +1,8 @@
 var commandRunning = false;
 var Daelement;
-$(document).foundation();
-$(document).ready(function () {
 
+$(document).ready(function () {
+    $(document).foundation();
     $(".toggle").click(function () {
         $(this).toggleClass("active");
     });
